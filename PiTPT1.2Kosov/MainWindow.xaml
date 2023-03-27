@@ -1,0 +1,21 @@
+﻿<Window x:Class="PiTPT1._2Kosov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PiTPT1._2Kosov"
+        mc:Ignorable="d"
+        Title="Питтп" Height="180" Width="290">
+    <Grid>
+        <Button Margin="15,100,15,15"
+                Content="Решить"
+                Click="Solving"/>
+
+        <TextBox x:Name="Nletter"
+                 Margin ="15,50,15,85"/>
+
+        <TextBlock Text="Введите длину массива"
+                   Margin="15,15,1,120"/>
+    </Grid>
+</Window>
+
