@@ -28,11 +28,7 @@ namespace PiTPT1._2Kosov
 
         private void Solving(object sender, RoutedEventArgs e)
         {
-            if (!Int32.TryParse(Nletter.Text, out int N))
-            {
-                MessageBox.Show("Некорректные данные", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            else
+            if (Int32.TryParse(Nletter.Text, out int N) && N > 0)
             {
                 int[] mass = new int[N];
                 Random rnd = new Random();
@@ -55,6 +51,10 @@ namespace PiTPT1._2Kosov
                 }
 
                 MessageBox.Show("Массив:\n" + AllTime + "\n" + "Кол-во смен знака: " + kol);
+            }
+            else
+            {
+                MessageBox.Show("Некорректные данные", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
